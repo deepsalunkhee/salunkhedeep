@@ -1,0 +1,57 @@
+.Exp {
+    padding: 2rem;
+    color: aliceblue;
+  }
+  
+  .Exp h1 {
+    color: orange;
+  }
+  
+  .IEEE-WF,
+  .Unspot-core {
+    border: 5px solid orange;
+    padding: 1rem;
+  }
+  
+  .roles {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 767px) {
+    .Exp {
+      padding: 1rem;
+    }
+  
+    .roles {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .IEEE-WF,
+    .Unspot-core {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+  }
+  
+  /* Media query for screens larger than 768px */
+  @media (min-width: 768px) {
+    .Exp {
+      padding: 2rem;
+    }
+  
+    .roles {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  
+    .IEEE-WF,
+    .Unspot-core {
+      width: calc(50% - 0.5rem);
+    }
+  }
+  

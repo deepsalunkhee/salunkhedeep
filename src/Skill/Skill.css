@@ -1,0 +1,78 @@
+
+.Skill {
+    padding: 2rem;
+    color: orange;
+  
+  }
+
+  
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .myskill {
+    height: 15rem;
+    object-fit: contain;
+    
+    /* transition: transform 0.3s ease-in-out; */
+    /* animation: fadeIn 1s ease-in-out 1; */
+    animation: float 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .skills {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .skills {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .skills {
+      grid-template-columns: repeat(2, 1fr);
+      
+    }
+    .myskill{
+        height: 8rem;
+    }
+  }
+
+
+
+  
+  .myskill:hover {
+    transform: translateY(-10px);
+  }
+  
+  

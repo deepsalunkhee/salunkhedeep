@@ -1,0 +1,163 @@
+/* Intro.css */
+
+.Intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+  }
+  
+  .Myinfo {
+    flex: 1;
+    padding: 2rem;
+  }
+
+ 
+  .Myinfo {
+    flex: 1;
+    animation: fadeIn 1s forwards, typeIn 5s steps(20, end) forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .Myimg {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    animation: slideIn 1s forwards;
+    height: 30rem;
+    
+  }
+
+  .Myinfo h1{
+    color: orange;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .Myinfo h2 {
+    /* opacity: 0; */
+    /* transition: opacity 0.5s ease-in-out; */
+    display: inline-block;
+    color: aliceblue;
+  }
+  
+  .Myinfo .fade {
+    opacity: 1;
+  }
+
+  
+  .Myimg img {
+    max-width: 100%;
+    height: auto;
+    animation: fadeIn 1s forwards;
+    border-radius: 50%; /* Makes the image circular */
+
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    .Intro {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .Myinfo {
+      margin-bottom: 20px;
+    }
+  
+    .Myimg {
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Styles for screens smaller than 480px */
+    .Intro {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .Myinfo {
+      margin-bottom: 20px;
+      
+    }
+  
+    .Myimg {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .Myimg img {
+      /* Reduce image width for smaller screens */
+      height: 10%;
+     
+      
+    }
+  }
+
+/*floating effect*/
+
+  
+  .Myimg img {
+    max-width: 100%;
+    height: 30rem;
+    border-radius: 50%; /* Makes the image circular */
+    /* position: absolute; add absolute position */
+    top: 0; /* position at the top */
+    left: 0; /* position at the left */
+    animation: float 2s infinite alternate ease-in-out; /* add floating animation */
+  }
+  
+  @keyframes float {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(0, 10px);
+    }
+  }
+  
+  .button {
+    background-color: orange;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  
+
+
+  
